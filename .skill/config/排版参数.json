@@ -1,0 +1,441 @@
+{
+  "_说明": "教辅资料包排版参数，build_docx.py 直接读取。颜色为 RGB 十六进制；字号单位磅(pt)；line 为固定行距(磅)；before/after 为段前段后(磅)。参照一份市售的《三上语文阅读理解考点与答题模板》实测取色。改这里即全书生效，规范说明见排版规范.md。",
+  "page": {
+    "size": "A4",
+    "margin_top_cm": 1.5,
+    "margin_bottom_cm": 1.5,
+    "margin_left_cm": 1.4,
+    "margin_right_cm": 1.4,
+    "footer_distance_cm": 0.8,
+    "footer_text": "第 {PAGE} 页 共 {NUMPAGES} 页"
+  },
+  "fonts": {
+    "serif": "Songti SC",
+    "serif_note": "讲解区中文。装了思源宋体后改成 \"Source Han Serif CN\"，加粗更接近参照品",
+    "kai": "Kaiti SC",
+    "windows": {"serif": "SimSun", "kai": "KaiTi"},
+    "windows_note": "在 Windows 上生成时自动换成这两款（系统自带宋体、楷体）；Mac 用上面的 Songti SC / Kaiti SC",
+    "latin": "Times New Roman"
+  },
+  "colors": {
+    "black": "000000",
+    "red": "FF0000",
+    "green": "00B050",
+    "purple": "CC00CC",
+    "blue": "3333FF",
+    "gray": "595959",
+    "unit_fill": "FFD1C2",
+    "unit_line": "C0504D",
+    "kd_fill": "FFFF00",
+    "label_问法": "D6F4D6",
+    "label_思路": "FFDFDF",
+    "label_模板": "E5E5FF",
+    "label_解析": "FFF2CC"
+  },
+  "elements": {
+    "总标题": {
+      "size": 22,
+      "bold": true,
+      "line": 32,
+      "after": 4,
+      "align": "center"
+    },
+    "副标题": {
+      "size": 11,
+      "bold": false,
+      "line": 18,
+      "after": 8,
+      "align": "center",
+      "color": "gray"
+    },
+    "目录1": {
+      "size": 12,
+      "bold": true,
+      "line": 20,
+      "color": "red"
+    },
+    "目录2": {
+      "size": 11,
+      "bold": false,
+      "line": 19,
+      "color": "blue",
+      "indent_cm": 0.75
+    },
+    "目录3": {
+      "size": 10.5,
+      "bold": false,
+      "line": 17,
+      "color": "black",
+      "indent_cm": 1.5,
+      "font": "kai"
+    },
+    "单元条": {
+      "size": 16,
+      "bold": true,
+      "line": 28,
+      "after": 2,
+      "align": "center"
+    },
+    "单元要素": {
+      "size": 13,
+      "bold": true,
+      "line": 22,
+      "after": 4,
+      "align": "center",
+      "color": "red"
+    },
+    "考点": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "before": 6,
+      "after": 2
+    },
+    "栏目": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "before": 2
+    },
+    "问法": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "color": "purple"
+    },
+    "思路": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "color": "green"
+    },
+    "模板": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "color": "red"
+    },
+    "讲解正文": {
+      "size": 14,
+      "bold": true,
+      "line": 24,
+      "color": "black"
+    },
+    "例题": {
+      "size": 13,
+      "bold": false,
+      "line": 22,
+      "before": 2
+    },
+    "例文": {
+      "size": 13,
+      "bold": false,
+      "line": 22,
+      "font": "kai",
+      "first_line_chars": 2
+    },
+    "来源": {
+      "size": 12,
+      "bold": false,
+      "line": 20,
+      "align": "right",
+      "font": "kai"
+    },
+    "示范答案": {
+      "size": 13,
+      "bold": false,
+      "line": 22,
+      "after": 4
+    },
+    "练习标题": {
+      "size": 13,
+      "bold": true,
+      "line": 22,
+      "before": 10,
+      "after": 4,
+      "align": "center"
+    },
+    "练习正文": {
+      "size": 12,
+      "bold": false,
+      "line": 21,
+      "font": "kai",
+      "first_line_chars": 2
+    },
+    "练习大题": {
+      "size": 12,
+      "bold": true,
+      "line": 21,
+      "before": 4
+    },
+    "练习小题": {
+      "size": 12,
+      "bold": false,
+      "line": 21
+    },
+    "选项": {
+      "size": 12,
+      "bold": false,
+      "line": 21,
+      "indent_cm": 0.8
+    },
+    "作答线": {
+      "size": 12,
+      "bold": false,
+      "line": 24
+    },
+    "答案单元": {
+      "size": 13,
+      "bold": true,
+      "line": 22,
+      "before": 8,
+      "after": 2,
+      "color": "red"
+    },
+    "答案篇名": {
+      "size": 12.5,
+      "bold": true,
+      "line": 21,
+      "before": 6,
+      "after": 2
+    },
+    "答案题": {
+      "size": 12,
+      "bold": false,
+      "line": 20
+    },
+    "答案行": {
+      "size": 12,
+      "bold": false,
+      "line": 20,
+      "indent_cm": 0.6
+    },
+    "卷头标题": {
+      "size": 18,
+      "bold": true,
+      "line": 28,
+      "align": "center"
+    },
+    "卷头信息": {
+      "size": 12,
+      "bold": false,
+      "line": 24,
+      "align": "center"
+    },
+    "打卡表头": {
+      "size": 12,
+      "bold": true,
+      "line": 22
+    },
+    "页脚": {
+      "size": 10.5,
+      "bold": false,
+      "line": 16,
+      "align": "center"
+    }
+  },
+  "themes": {
+    "_说明": "按内容稿「类型」覆盖上面的 colors / elements。知识清单（初中语法手册等）：讲解区不再整段加粗，规则用色条小标题，例句英文常规、中文灰色，表格、口诀框、课本引用块，避免知识点揉成一块。说明见references/排版规范.md第九节。",
+    "知识清单": {
+      "kd_style": "bar",
+      "key_bold": true,
+      "colors": {
+        "theme": "1F4E79",
+        "theme_light": "DEEAF6",
+        "tip": "C00000",
+        "quote_fill": "EEF6E8",
+        "quote_line": "70AD47",
+        "rhyme_fill": "FFF4D6",
+        "rhyme_line": "F4B183",
+        "table_head": "DEEAF6",
+        "table_line": "9DB7D5",
+        "eg_cn": "7F7F7F"
+      },
+      "elements": {
+        "单元条": {
+          "size": 15,
+          "bold": true,
+          "line": 24,
+          "after": 1,
+          "align": "center"
+        },
+        "单元要素": {
+          "size": 10.5,
+          "bold": false,
+          "line": 15,
+          "after": 3,
+          "align": "center",
+          "color": "red"
+        },
+        "考点": {
+          "size": 13,
+          "bold": true,
+          "line": 20,
+          "before": 6,
+          "after": 2,
+          "color": "theme"
+        },
+        "栏目": {
+          "size": 11,
+          "bold": true,
+          "line": 17,
+          "before": 4,
+          "after": 1
+        },
+        "讲解正文": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17
+        },
+        "问法": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17,
+          "color": "purple"
+        },
+        "思路": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17,
+          "color": "green"
+        },
+        "模板": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17,
+          "color": "red"
+        },
+        "知识小标题": {
+          "size": 11.5,
+          "bold": true,
+          "line": 0,
+          "before": 5,
+          "after": 2,
+          "color": "theme",
+          "indent_cm": 0.1
+        },
+        "例句": {
+          "size": 10.5,
+          "bold": false,
+          "line": 16,
+          "indent_cm": 0.55
+        },
+        "课本句": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17,
+          "indent_cm": 0.3
+        },
+        "口诀框": {
+          "size": 11.5,
+          "bold": true,
+          "line": 19,
+          "color": "tip",
+          "indent_cm": 0.3
+        },
+        "易错条": {
+          "size": 10.5,
+          "bold": false,
+          "line": 17,
+          "after": 2
+        },
+        "表格文字": {
+          "size": 10,
+          "bold": false,
+          "line": 14
+        },
+        "表头文字": {
+          "size": 10,
+          "bold": true,
+          "line": 14,
+          "align": "center",
+          "color": "theme"
+        },
+        "例题": {
+          "size": 11,
+          "bold": false,
+          "line": 18,
+          "before": 3
+        },
+        "示范答案": {
+          "size": 11,
+          "bold": false,
+          "line": 18,
+          "after": 2
+        },
+        "来源": {
+          "size": 9.5,
+          "bold": false,
+          "line": 14,
+          "align": "right",
+          "color": "gray"
+        },
+        "练习标题": {
+          "size": 13.5,
+          "bold": true,
+          "line": 22,
+          "before": 2,
+          "after": 8,
+          "align": "center",
+          "color": "theme"
+        },
+        "练习正文": {
+          "size": 12,
+          "bold": false,
+          "line": 19.5,
+          "after": 3,
+          "font": "kai",
+          "first_line_chars": 2
+        },
+        "练习大题": {
+          "size": 12,
+          "bold": true,
+          "line": 21,
+          "before": 7.5,
+          "after": 3,
+          "color": "theme"
+        },
+        "练习小标题": {
+          "size": 12,
+          "bold": true,
+          "line": 20,
+          "before": 4.5,
+          "after": 2,
+          "color": "black"
+        },
+        "练习小题": {
+          "size": 12,
+          "bold": false,
+          "line": 20,
+          "after": 3.8
+        },
+        "选项": {
+          "size": 12,
+          "bold": false,
+          "line": 19,
+          "after": 4.2,
+          "indent_cm": 0.65
+        },
+        "作答线": {
+          "size": 12,
+          "bold": false,
+          "line": 24,
+          "after": 4
+        },
+        "答案题": {
+          "size": 11.5,
+          "bold": false,
+          "line": 18.5,
+          "after": 4
+        },
+        "答案行": {
+          "size": 11.5,
+          "bold": false,
+          "line": 18.5,
+          "after": 2,
+          "indent_cm": 0.55
+        }
+      }
+    }
+  }
+}

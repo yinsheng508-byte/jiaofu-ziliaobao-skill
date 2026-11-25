@@ -1,0 +1,21 @@
+{
+  "_说明": "颜色键：main 主色（标题、标签）/ deep 深色（大标题）/ soft 浅主色（页眉、提示）/ red 关键词红 / blue 补充说明蓝 / grey 页码注释灰 / black 正文 / rule 线 / thin 细线 / box 框底色 / head 表头底色 / warn 易错警示 / hl 整句重点高亮。全书色相 ≤5 种（同一色相的深浅算一种）。",
+  "风格": "知识点汇总风 · 学科色",
+  "适合": "初中历史知识点总结",
+  "效果图": "效果图/历史赭红.png",
+  "colors": {
+    "red": "C0281E",
+    "main": "8A2E22",
+    "deep": "5E1D15",
+    "soft": "A0755F",
+    "blue": "3A5F7D",
+    "grey": "8C8C8C",
+    "black": "222222",
+    "rule": "C2AD96",
+    "thin": "E6D9C6",
+    "box": "F6F3EA",
+    "head": "F3E6D3",
+    "warn": "B4592A",
+    "hl": "F3E3CC"
+  }
+}
